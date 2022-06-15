@@ -1,1 +1,1 @@
-## E-commerce Frontend with Botstrap 5.2
+## E-commerce Frontend with Bootstrap 5.2

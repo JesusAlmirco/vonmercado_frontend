@@ -17,6 +17,1044 @@
     />
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+          <a class="navbar-brand" href="">
+            <img src="img/logo.svg" alt="logo" style="height: 30px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#leadTogglerIcon"
+            aria-controls="leadTogglerIcon"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-center"
+            id="leadTogglerIcon"
+          >
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+              <form class="d-flex" action="">
+                <input
+                  class="form-control me-2 rounded-pill"
+                  type="text"
+                  name="q"
+                  placeholder=" Buscar Productos..."
+                  aria-label="Search"
+                />
+              </form>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item px-2 py-2">
+                <a href="" class="btn btn-rounded btn-outline-info">
+                  <i class="bi bi-cart2"></i>
+                  <span class="badge bg-primary rounded-pill float-end"
+                    >10</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a href="login.html" class="btn btn-rounded btn-outline-info"
+                  >Iniciar Sesión</a
+                >
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a href="register.html" class="btn btn-rounded btn-info"
+                  >Registrarse</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  href=""
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1042&q=80"
+                    class="img-fluid rounded-circle"
+                    width="30px"
+                  />
+                </a>
+                <div class="dropdown-menu dropdown-menu-end" style="background-color: #121f3d;">
+                  <!-- <a href="#" class="dropdown-item">Reports</a> -->
+                  <a
+                    href=""
+                    class="dropdown-item"
+                    style="color: #fff !important"
+                  >
+                  <i class="bi bi-sliders"></i> Ajustes
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a
+                    href=""
+                    class="dropdown-item"
+                    style="color: #fff !important"
+                  >
+                  <i class="bi bi-box-arrow-right"></i>
+                   Cerrar Sesión
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="mt-5 py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- topics -->
+          <div class="col-md-3 d-none d-lg-block">
+            <div class="col-12 col-md-6 col-lg-12 py-5">
+              <div class="list-group" style="border-radius: 15px">
+                <a class="list-group-item text-center fw-bold"> Category </a>
+                <a href="" class="list-group-item" style="font-size: 1.1rem">
+                  All <span class="badge bg-primary float-end">123</span>
+                </a>
+                <a href="" class="list-group-item" style="font-size: 1.1rem">
+                  Vegetables <span class="badge bg-primary float-end">12</span>
+                </a>
+                <a href="" class="list-group-item" style="font-size: 1.1rem">
+                  Fruits <span class="badge bg-primary float-end">12</span>
+                </a>
+                <a href="" class="list-group-item" style="font-size: 1.1rem">
+                  Fish <span class="badge bg-primary float-end">12</span>
+                </a>
+                <a href="" class="list-group-item" style="font-size: 1.1rem">
+                  Meat<span class="badge bg-primary float-end">12</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="col-md-9">
+            <div class="row">
+              <div
+                class="col-12 col-md-4 col-lg-4 mt-5 d-flex align-items-stretch"
+              >
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://media.istockphoto.com/photos/fresh-vegetables-picture-id174429248?s=612x612"
+                    alt="..."
+                    style="border-radius: 15px"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a
+                        href="von_detail.html"
+                        style="color: #e5e5e5; font-size: 1.4rem"
+                        >Paquete de verduras orgánicas de temporada</a
+                      >
+                    </h5>
+                    <span class="float-start text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      
+                    </span>
+                    <span class="float-end">
+                      ( 1234 Reviews )
+                    </span>
+                    <br>
+                    <p class="text-start fw-bold text-success">
+                      Ahora $ 2.00 P/KG
+                    </p>
+                    <p class="text-start fw-bold text-decoration-line-through text-danger">
+                      Antes $ 4.00 P/KG
+                    </p>
+                    <br>
+
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productDetail"
+                    >
+                      Details
+                    </button>
+                    <a
+                      href=""
+                      class="btn btn-primary"
+                    >
+                     <i class="bi bi-cart2"></i>
+                     
+                    </a>
+
+                    <button 
+                      href=""
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                    <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div
+                      class="modal"
+                      id="productDetail"
+                      role="dialog"
+                      tabindex="-1"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content rounded-4 shadow">
+                          <div class="modal-header border-bottom-0">
+                            <h5 class="modal-title">Product Details</h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                              style="color: #fff !important"
+                            ></button>
+                          </div>
+                          <div class="modal-body py-0">
+                            <p>
+                              This is a modal sheet, a variation of the modal
+                              that docs itself to the bottom of the viewport
+                              like the newer share sheets in iOS.
+                            </p>
+                          </div>
+                          <div class="modal-footer flex-column border-top-0">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-primary w-100 mx-0 mb-2"
+                            >
+                              Save changes
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-light w-100 mx-0"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-4 col-lg-4 mt-5 d-flex align-items-stretch"
+              >
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://media.istockphoto.com/photos/fresh-vegetables-picture-id174429248?s=612x612"
+                    alt="..."
+                    style="border-radius: 15px"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a
+                        href="von_detail.html"
+                        style="color: #e5e5e5; font-size: 1.4rem"
+                        >Paquete de verduras orgánicas de temporada</a
+                      >
+                    </h5>
+                    <span class="float-start text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      
+                    </span>
+                    <span class="float-end">
+                      ( 1234 Reviews )
+                    </span>
+                    <br>
+                    <p class="text-start fw-bold text-success">
+                      Ahora $ 2.00 P/KG
+                    </p>
+                    <p class="text-start fw-bold text-decoration-line-through text-danger">
+                      Antes $ 4.00 P/KG
+                    </p>
+                    <br>
+
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productDetail"
+                    >
+                      Details
+                    </button>
+                    <a
+                      href=""
+                      class="btn btn-primary"
+                    >
+                     <i class="bi bi-cart2"></i>
+                     
+                    </a>
+
+                    <button 
+                      href=""
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                    <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div
+                      class="modal"
+                      id="productDetail"
+                      role="dialog"
+                      tabindex="-1"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content rounded-4 shadow">
+                          <div class="modal-header border-bottom-0">
+                            <h5 class="modal-title">Product Details</h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                              style="color: #fff !important"
+                            ></button>
+                          </div>
+                          <div class="modal-body py-0">
+                            <p>
+                              This is a modal sheet, a variation of the modal
+                              that docs itself to the bottom of the viewport
+                              like the newer share sheets in iOS.
+                            </p>
+                          </div>
+                          <div class="modal-footer flex-column border-top-0">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-primary w-100 mx-0 mb-2"
+                            >
+                              Save changes
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-light w-100 mx-0"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4 col-lg-4 mt-5 d-flex align-items-stretch"
+              >
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://media.istockphoto.com/photos/fresh-vegetables-picture-id174429248?s=612x612"
+                    alt="..."
+                    style="border-radius: 15px"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a
+                        href="von_detail.html"
+                        style="color: #e5e5e5; font-size: 1.4rem"
+                        >Paquete de verduras orgánicas de temporada</a
+                      >
+                    </h5>
+                    <span class="float-start text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      
+                    </span>
+                    <span class="float-end">
+                      ( 1234 Reviews )
+                    </span>
+                    <br>
+                    <p class="text-start fw-bold text-success">
+                      Ahora $ 2.00 P/KG
+                    </p>
+                    <p class="text-start fw-bold text-decoration-line-through text-danger">
+                      Antes $ 4.00 P/KG
+                    </p>
+                    <br>
+
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productDetail"
+                    >
+                      Details
+                    </button>
+                    <a
+                      href=""
+                      class="btn btn-primary"
+                    >
+                     <i class="bi bi-cart2"></i>
+                     
+                    </a>
+
+                    <button 
+                      href=""
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                    <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div
+                      class="modal"
+                      id="productDetail"
+                      role="dialog"
+                      tabindex="-1"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content rounded-4 shadow">
+                          <div class="modal-header border-bottom-0">
+                            <h5 class="modal-title">Product Details</h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                              style="color: #fff !important"
+                            ></button>
+                          </div>
+                          <div class="modal-body py-0">
+                            <p>
+                              This is a modal sheet, a variation of the modal
+                              that docs itself to the bottom of the viewport
+                              like the newer share sheets in iOS.
+                            </p>
+                          </div>
+                          <div class="modal-footer flex-column border-top-0">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-primary w-100 mx-0 mb-2"
+                            >
+                              Save changes
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-light w-100 mx-0"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4 col-lg-4 mt-5 d-flex align-items-stretch"
+              >
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://media.istockphoto.com/photos/fresh-vegetables-picture-id174429248?s=612x612"
+                    alt="..."
+                    style="border-radius: 15px"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a
+                        href="von_detail.html"
+                        style="color: #e5e5e5; font-size: 1.4rem"
+                        >Paquete de verduras orgánicas de temporada</a
+                      >
+                    </h5>
+                    <span class="float-start text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      
+                    </span>
+                    <span class="float-end">
+                      ( 1234 Reviews )
+                    </span>
+                    <br>
+                    <p class="text-start fw-bold text-success">
+                      Ahora $ 2.00 P/KG
+                    </p>
+                    <p class="text-start fw-bold text-decoration-line-through text-danger">
+                      Antes $ 4.00 P/KG
+                    </p>
+                    <br>
+
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productDetail"
+                    >
+                      Details
+                    </button>
+                    <a
+                      href=""
+                      class="btn btn-primary"
+                    >
+                     <i class="bi bi-cart2"></i>
+                     
+                    </a>
+
+                    <button 
+                      href=""
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                    <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div
+                      class="modal"
+                      id="productDetail"
+                      role="dialog"
+                      tabindex="-1"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content rounded-4 shadow">
+                          <div class="modal-header border-bottom-0">
+                            <h5 class="modal-title">Product Details</h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                              style="color: #fff !important"
+                            ></button>
+                          </div>
+                          <div class="modal-body py-0">
+                            <p>
+                              This is a modal sheet, a variation of the modal
+                              that docs itself to the bottom of the viewport
+                              like the newer share sheets in iOS.
+                            </p>
+                          </div>
+                          <div class="modal-footer flex-column border-top-0">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-primary w-100 mx-0 mb-2"
+                            >
+                              Save changes
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-light w-100 mx-0"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4 col-lg-4 mt-5 d-flex align-items-stretch"
+              >
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://media.istockphoto.com/photos/fresh-vegetables-picture-id174429248?s=612x612"
+                    alt="..."
+                    style="border-radius: 15px"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a
+                        href="von_detail.html"
+                        style="color: #e5e5e5; font-size: 1.4rem"
+                        >Paquete de verduras orgánicas de temporada</a
+                      >
+                    </h5>
+                    <span class="float-start text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      
+                    </span>
+                    <span class="float-end">
+                      ( 1234 Reviews )
+                    </span>
+                    <br>
+                    <p class="text-start fw-bold text-success">
+                      Ahora $ 2.00 P/KG
+                    </p>
+                    <p class="text-start fw-bold text-decoration-line-through text-danger">
+                      Antes $ 4.00 P/KG
+                    </p>
+                    <br>
+
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productDetail"
+                    >
+                      Details
+                    </button>
+                    <a
+                      href=""
+                      class="btn btn-primary"
+                    >
+                     <i class="bi bi-cart2"></i>
+                     
+                    </a>
+
+                    <button 
+                      href=""
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                    <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div
+                      class="modal"
+                      id="productDetail"
+                      role="dialog"
+                      tabindex="-1"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content rounded-4 shadow">
+                          <div class="modal-header border-bottom-0">
+                            <h5 class="modal-title">Product Details</h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                              style="color: #fff !important"
+                            ></button>
+                          </div>
+                          <div class="modal-body py-0">
+                            <p>
+                              This is a modal sheet, a variation of the modal
+                              that docs itself to the bottom of the viewport
+                              like the newer share sheets in iOS.
+                            </p>
+                          </div>
+                          <div class="modal-footer flex-column border-top-0">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-primary w-100 mx-0 mb-2"
+                            >
+                              Save changes
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-light w-100 mx-0"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4 col-lg-4 mt-5 d-flex align-items-stretch"
+              >
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://media.istockphoto.com/photos/fresh-vegetables-picture-id174429248?s=612x612"
+                    alt="..."
+                    style="border-radius: 15px"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a
+                        href="von_detail.html"
+                        style="color: #e5e5e5; font-size: 1.4rem"
+                        >Paquete de verduras orgánicas de temporada</a
+                      >
+                    </h5>
+                    <span class="float-start text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      
+                    </span>
+                    <span class="float-end">
+                      ( 1234 Reviews )
+                    </span>
+                    <br>
+                    <p class="text-start fw-bold text-success">
+                      Ahora $ 2.00 P/KG
+                    </p>
+                    <p class="text-start fw-bold text-decoration-line-through text-danger">
+                      Antes $ 4.00 P/KG
+                    </p>
+                    <br>
+
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productDetail"
+                    >
+                      Details
+                    </button>
+                    <a
+                      href=""
+                      class="btn btn-primary"
+                    >
+                     <i class="bi bi-cart2"></i>
+                     
+                    </a>
+
+                    <button 
+                      href=""
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                    <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div
+                      class="modal"
+                      id="productDetail"
+                      role="dialog"
+                      tabindex="-1"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content rounded-4 shadow">
+                          <div class="modal-header border-bottom-0">
+                            <h5 class="modal-title">Product Details</h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                              style="color: #fff !important"
+                            ></button>
+                          </div>
+                          <div class="modal-body py-0">
+                            <p>
+                              This is a modal sheet, a variation of the modal
+                              that docs itself to the bottom of the viewport
+                              like the newer share sheets in iOS.
+                            </p>
+                          </div>
+                          <div class="modal-footer flex-column border-top-0">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-primary w-100 mx-0 mb-2"
+                            >
+                              Save changes
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-light w-100 mx-0"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4 col-lg-4 mt-5 d-flex align-items-stretch"
+              >
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://media.istockphoto.com/photos/fresh-vegetables-picture-id174429248?s=612x612"
+                    alt="..."
+                    style="border-radius: 15px"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a
+                        href="von_detail.html"
+                        style="color: #e5e5e5; font-size: 1.4rem"
+                        >Paquete de verduras orgánicas de temporada</a
+                      >
+                    </h5>
+                    <span class="float-start text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      
+                    </span>
+                    <span class="float-end">
+                      ( 1234 Reviews )
+                    </span>
+                    <br>
+                    <p class="text-start fw-bold text-success">
+                      Ahora $ 2.00 P/KG
+                    </p>
+                    <p class="text-start fw-bold text-decoration-line-through text-danger">
+                      Antes $ 4.00 P/KG
+                    </p>
+                    <br>
+
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productDetail"
+                    >
+                      Details
+                    </button>
+                    <a
+                      href=""
+                      class="btn btn-primary"
+                    >
+                     <i class="bi bi-cart2"></i>
+                     
+                    </a>
+
+                    <button 
+                      href=""
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                    <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div
+                      class="modal"
+                      id="productDetail"
+                      role="dialog"
+                      tabindex="-1"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content rounded-4 shadow">
+                          <div class="modal-header border-bottom-0">
+                            <h5 class="modal-title">Product Details</h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                              style="color: #fff !important"
+                            ></button>
+                          </div>
+                          <div class="modal-body py-0">
+                            <p>
+                              This is a modal sheet, a variation of the modal
+                              that docs itself to the bottom of the viewport
+                              like the newer share sheets in iOS.
+                            </p>
+                          </div>
+                          <div class="modal-footer flex-column border-top-0">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-primary w-100 mx-0 mb-2"
+                            >
+                              Save changes
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-light w-100 mx-0"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4 col-lg-4 mt-5 d-flex align-items-stretch"
+              >
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://media.istockphoto.com/photos/fresh-vegetables-picture-id174429248?s=612x612"
+                    alt="..."
+                    style="border-radius: 15px"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a
+                        href="von_detail.html"
+                        style="color: #e5e5e5; font-size: 1.4rem"
+                        >Paquete de verduras orgánicas de temporada</a
+                      >
+                    </h5>
+                    <span class="float-start text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      
+                    </span>
+                    <span class="float-end">
+                      ( 1234 Reviews )
+                    </span>
+                    <br>
+                    <p class="text-start fw-bold text-success">
+                      Ahora $ 2.00 P/KG
+                    </p>
+                    <p class="text-start fw-bold text-decoration-line-through text-danger">
+                      Antes $ 4.00 P/KG
+                    </p>
+                    <br>
+
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productDetail"
+                    >
+                      Details
+                    </button>
+                    <a
+                      href=""
+                      class="btn btn-primary"
+                    >
+                     <i class="bi bi-cart2"></i>
+                     
+                    </a>
+
+                    <button 
+                      href=""
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                    <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div
+                      class="modal"
+                      id="productDetail"
+                      role="dialog"
+                      tabindex="-1"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content rounded-4 shadow">
+                          <div class="modal-header border-bottom-0">
+                            <h5 class="modal-title">Product Details</h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                              style="color: #fff !important"
+                            ></button>
+                          </div>
+                          <div class="modal-body py-0">
+                            <p>
+                              This is a modal sheet, a variation of the modal
+                              that docs itself to the bottom of the viewport
+                              like the newer share sheets in iOS.
+                            </p>
+                          </div>
+                          <div class="modal-footer flex-column border-top-0">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-primary w-100 mx-0 mb-2"
+                            >
+                              Save changes
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-light w-100 mx-0"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+
+              <!-- Paginate -->
+              <div class="col-12 col-md-6 col-lg-12 py-5">
+                <nav aria-label="..." class="text-center">
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <span class="page-link">Previous</span>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                      <span class="page-link">2</span>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">...</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">7</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

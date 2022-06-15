@@ -17,6 +17,97 @@
     />
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+          <a class="navbar-brand" href="">
+            <img src="img/logo.svg" alt="logo" style="height: 30px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#leadTogglerIcon"
+            aria-controls="leadTogglerIcon"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-center"
+            id="leadTogglerIcon"
+          >
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+              <form class="d-flex" action="">
+                <input
+                  class="form-control me-2 rounded-pill"
+                  type="text"
+                  name="q"
+                  placeholder=" Buscar Productos..."
+                  aria-label="Search"
+                />
+              </form>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item px-2 py-2">
+                <a href="" class="btn btn-rounded btn-outline-info">
+                  <i class="bi bi-cart2"></i>
+                  <span class="badge bg-primary rounded-pill float-end"
+                    >10</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a href="login.html" class="btn btn-rounded btn-outline-info"
+                  >Iniciar Sesión</a
+                >
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a href="register.html" class="btn btn-rounded btn-info"
+                  >Registrarse</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  href=""
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1042&q=80"
+                    class="img-fluid rounded-circle"
+                    width="30px"
+                  />
+                </a>
+                <div class="dropdown-menu dropdown-menu-end" style="background-color: #121f3d;">
+                  <!-- <a href="#" class="dropdown-item">Reports</a> -->
+                  <a
+                    href=""
+                    class="dropdown-item"
+                    style="color: #fff !important"
+                  >
+                  <i class="bi bi-sliders"></i> Ajustes
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a
+                    href=""
+                    class="dropdown-item"
+                    style="color: #fff !important"
+                  >
+                  <i class="bi bi-box-arrow-right"></i>
+                   Cerrar Sesión
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
