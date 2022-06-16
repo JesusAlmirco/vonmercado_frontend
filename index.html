@@ -181,30 +181,57 @@
                               class="btn-close"
                               data-bs-dismiss="modal"
                               aria-label="Close"
-                              style="color: #fff !important"
                             ></button>
                           </div>
                           <div class="modal-body py-0">
-                            <p>
-                              This is a modal sheet, a variation of the modal
-                              that docs itself to the bottom of the viewport
-                              like the newer share sheets in iOS.
-                            </p>
+                            <div class="card">
+                              <img src="https://media.istockphoto.com/photos/fresh-vegetables-picture-id174429248?s=612x612" class="card-img-top" alt="" style="border-radius: 20px;">
+                              <div class="card-body">
+                                <p>
+                                  This is a modal sheet, a variation of the modal
+                                  that docs itself to the bottom of the viewport
+                                  like the newer share sheets in iOS.
+                                </p>
+                                <span>
+                                  Quantity
+                                  <form method='POST' action='#'>
+                                    <button class="btn btn-primary qtyminus" aria-hidden="true">
+                                      <i class="bi bi-dash-lg"></i>
+                                    </button>
+                                    <input type="number" class="btn btn-primary"  name="qty" id="qty" min="1" max="10" step="1" value="1">
+                                    <button class="btn btn-primary qtyplus" aria-hidden="true">
+                                      <i class="bi bi-plus-lg"></i>
+                                    </button>
+                                  </form>
+                                </span>
+                                <hr/>
+                                <button
+                                  href=""
+                                  class="btn btn-primary"
+                                >
+                                  <i class="bi bi-cart2"></i>
+                                  Add Cart
+                                </button>
+
+                                <button 
+                                  href=""
+                                  type="button"
+                                  class="btn btn-outline-danger"
+                                >
+                                  <i class="bi bi-heart"></i>
+                                  Add Wishlist
+                                </button>
+                              </div>
+                            </div>
+                            
                           </div>
                           <div class="modal-footer flex-column border-top-0">
-                            <button
+                            <!-- <button
                               type="button"
                               class="btn btn-lg btn-primary w-100 mx-0 mb-2"
                             >
                               Save changes
-                            </button>
-                            <button
-                              type="button"
-                              class="btn btn-lg btn-light w-100 mx-0"
-                              data-bs-dismiss="modal"
-                            >
-                              Close
-                            </button>
+                            </button> -->
                           </div>
                         </div>
                       </div>
